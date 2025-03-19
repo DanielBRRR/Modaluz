@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deportes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Deportes.css" />
+  </head>
+
+  <body class="page">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg  shadow-sm">
+      <div class="container">
+        <a class="navbar__brand" href="/index.html">
+          <img src="./img/Logo.png" alt="Logo" class="navbar__logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="Mujer.html">Moda Mujer</a></li>
+            <li class="nav-item"><a class="nav-link" href="moda-hombre.html">Moda Hombre</a></li>
+            <li class="nav-item"><a class="nav-link" href="moda-infantil.html">Moda Infantil</a></li>
+            <li class="nav-item"><a class="nav-link" href="deportes.html">Deportes</a></li>
+            <li class="nav-item"><a class="nav-link" href="hogar.html">Hogar</a></li>
+            <!-- Botón para alternar el modo oscuro/claro -->
+            <li class="nav-item">
+              <button id="themeToggle" class="btn btn-outline-secondary">
+                <i id="themeIcon" class="bi bi-moon"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner -->
+    <section class="banner">
+      <img src="./img/banner-deportes.png" alt="Banner Muebles" />
+      <div class="banner-content">
+        <h2>Mira Nuestros</h2>
+        <h2>productos para ti</h2>
+        <h4>Variedad, calidad y estilo para deportistas</h4>
+        <a href="#productos" class="btn btn-light">Ver productos</a>
+      </div>
+    </section>
+
+    <!-- Categorías -->
+    <div class="container my-5">
+      <h3 class="fw-bold text-center mb-4">Categorías</h3>
+      <div class="row">
+        <div class="col">
+          <div class="category-card">
+            <a href="Mujer.html">
+              <img src="./img/Mujer.png" alt="Moda Mujer" class="img-fluid rounded-circle" />
+            </a>
+            <h4 class="mt-3">Moda Mujer</h4>
+          </div>
+        </div>
+        <div class="col">
+          <div class="category-card">
+            <a href="moda-hombre.html">
+              <img src="./img/hombre.png" alt="Moda Hombre" class="img-fluid rounded-circle" />
+            </a>
+            <h4 class="mt-3">Moda Hombre</h4>
+          </div>
+        </div>
+        <div class="col">
+          <div class="category-card">
+            <a href="moda-infantil.html">
+              <img src="./img/infantil.png" alt="Moda Infantil" class="img-fluid rounded-circle" />
+            </a>
+            <h4 class="mt-3">Moda Infantil</h4>
+          </div>
+        </div>
+        <div class="col">
+          <div class="category-card">
+            <a href="hogar.html">
+              <img src="./img/hogar.png" alt="Hogar" class="img-fluid rounded-circle" />
+            </a>
+            <h4 class="mt-3">Hogar</h4>
+          </div>
+        </div>
+        <div class="col">
+        </div>
+      </div>
+    </div>
+
+    <!-- Productos Destacados -->
+    <div id="productos-destacados" class="container my-5">
+      <h2 class="text-center mb-4">Productos Deportivos Destacados</h2>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="product-card">
+            <img src="./img/zapatillas-runningjpg.jpg" alt="Zapatillas Running" />
+            <h5 class="mt-3">Zapatillas Running</h5>
+            <p class="price">49.99 €</p>
+            <a href="#" class="btn btn-outline-primary">Comprar</a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="product-card">
+            <img src="./img/balon-futbol.jpg" alt="Balón Fútbol" />
+            <h5 class="mt-3">Balón de Fútbol</h5>
+            <p class="price">19.99 €</p>
+            <a href="#" class="btn btn-outline-primary">Comprar</a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="product-card">
+            <img src="./img/ropa-deportiva.jpg" alt="Ropa Deportiva" />
+            <h5 class="mt-3">Pantalón Deportivo</h5>
+            <p class="price">29.99 €</p>
+            <a href="#" class="btn btn-outline-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Productos -->
+    <section id="productos" class="productos">
+      <div class="container">
+        <h2 class="text-center mb-4">Nuestros Productos</h2>
+        <div id="carouselProductos" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/madrid.png" class="d-block w-100" alt="Producto 1" />
+            </div>
+            <div class="carousel-item">
+              <img src="./img/deportivas.png" class="d-block w-100" alt="Producto 2" />
+            </div>
+            <div class="carousel-item">
+              <img src="./img/nba.png" class="d-block w-100" alt="Producto 3" />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselProductos" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselProductos" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2024 Modaluz. Todos los derechos reservados.</p>
+      <p>
+        <a href="#" class="text-black">Política de privacidad</a> |
+        <a href="#" class="text-black">Términos y condiciones</a>
+      </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Obtener el botón de alternancia y el icono
+      const themeToggleButton = document.getElementById('themeToggle');
+      const themeIcon = document.getElementById('themeIcon');
+
+      // Verificar si el modo oscuro está almacenado en localStorage
+      if (localStorage.getItem('dark-mode') === 'enabled') {
+        document.body.classList.add('dark-mode');
+        document.querySelector('.navbar').classList.add('dark-mode');
+        themeIcon.classList.replace('bi-moon', 'bi-sun'); // Cambiar icono de luna a sol
+      }
+
+      // Alternar entre modo oscuro y claro
+      themeToggleButton.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        document.querySelector('.navbar').classList.toggle('dark-mode');
+        themeIcon.classList.toggle('bi-moon');
+        themeIcon.classList.toggle('bi-sun');
+
+        // Guardar el estado en localStorage
+        if (document.body.classList.contains('dark-mode')) {
+          localStorage.setItem('dark-mode', 'enabled');
+        } else {
+          localStorage.removeItem('dark-mode');
+        }
+      });
+    </script>
+  </body>
+</html>

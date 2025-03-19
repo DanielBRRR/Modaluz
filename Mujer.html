@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modaluz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./mujer.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="header">
+        <div class="container header__content">
+            <a class="header__logo" href="/index.html">
+                <img src="./img/Logo.png" alt="El Pegado Español" />
+                <span class="header__brand">Modaluz</span>
+            </a>
+
+            <nav class="header__nav d-none d-lg-block">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="Mujer.html">Moda Mujer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="moda-hombre.html">Moda Hombre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="moda-infantil.html">Moda Infantil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="deportes.html">Deportes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hogar.html">Hogar</a></li>
+                </ul>
+            </nav>
+            <button class="navbar-toggler d-lg-none bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse header__menu" id="menu">
+            <ul class="nav flex-column text-center bg-dark py-3">
+                <li class="nav-item"><a class="nav-link text-white" href="Mujer.html">Moda Mujer</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="moda-hombre.html">Moda Hombre</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="moda-infantil.html">Moda Infantil</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="deportes.html">Deportes</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="hogar.html">Hogar</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <div class="banner">
+        <img src="./img/BannerMujer.png" alt="Banner de Moda Mujer" class="banner__image">
+        <div class="banner__content">
+            <h2 class="banner__title">Mejora tu armario con nuestros</h2>
+            <h2 class="banner__title">productos hechos a mano para ti</h2>
+            <a href="#" class="btn btn-light banner__btn">Descubre más</a>
+        </div>
+    </div>
+
+    <!-- Productos Destacados -->
+    <section id="productos-destacados" class="productos py-5">
+        <div class="container">
+            <h2 class="productos__title text-center mb-4">Productos destacados</h2>
+            <div class="row g-4">
+                <!-- Producto 1 -->
+                <div class="col-md-3 col-6">
+                    <div class="card product-card">
+                        <img src="./img/neceser.png" class="card-img-top" alt="Neceser Acolchado Flores" />
+                        <div class="card-body text-center">
+                            <h5 class="product-card__title">Petite Mafalda</h5>
+                            <p class="product-card__description">Neceser Acolchado Flores</p>
+                            <p class="product-card__price">17,90 €</p>
+                            <a href="#" class="btn btn-outline-dark product-card__btn">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 2 -->
+                <div class="col-md-3 col-6">
+                    <div class="card product-card">
+                        <img src="./img/bufanda.png" class="card-img-top" alt="Bufanda de mohair" />
+                        <div class="card-body text-center">
+                            <h5 class="product-card__title">Mantas Ezcaray</h5>
+                            <p class="product-card__description">Bufanda de mohair</p>
+                            <p class="product-card__price">72 €</p>
+                            <a href="#" class="btn btn-outline-dark product-card__btn">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 3 -->
+                <div class="col-md-3 col-6">
+                    <div class="card product-card">
+                        <img src="./img/anillo.png" class="card-img-top" alt="Anillo Herkimer" />
+                        <div class="card-body text-center">
+                            <h5 class="product-card__title">Malababa</h5>
+                            <p class="product-card__description">Anillo de mujer Herkimer</p>
+                            <p class="product-card__price">150 €</p>
+                            <a href="#" class="btn btn-outline-dark product-card__btn">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 4 -->
+                <div class="col-md-3 col-6">
+                    <div class="card product-card">
+                        <img src="./img/joyero.png" class="card-img-top" alt="Joyero estampado" />
+                        <div class="card-body text-center">
+                            <h5 class="product-card__title">Tintoretto</h5>
+                            <p class="product-card__description">Joyero enrollable estampado</p>
+                            <p class="product-card__price">29,99 €</p>
+                            <a href="#" class="btn btn-outline-dark product-card__btn">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center py-4">
+        <p class="footer__text">&copy; 2024 Modaluz. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
