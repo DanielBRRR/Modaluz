@@ -78,7 +78,7 @@ a:hover, a:focus {
 
 /* Banner */
 .banner {
-  height: 500px;
+  height: 900px;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -231,4 +231,4 @@ body.dark #themeToggle .bi-moon {
   }
 }
 
-/*# sourceMappingURL=Styles.css.map */
+/*# sourceMappingURL=styles.css.map */
